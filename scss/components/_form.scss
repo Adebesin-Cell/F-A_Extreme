@@ -1,0 +1,59 @@
+.form {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: var(--span-s);
+
+  &__group {
+    margin-top: var(--span-m);
+  }
+
+  &__label {
+    display: block;
+    text-align: left;
+    font: normal normal 600 var(size-m) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-3);
+  }
+
+  &__input {
+    margin-top: calc(var(--span-xs) + 5px);
+    display: block;
+    font-family: inherit;
+    font-size: var(--size-m);
+    font-weight: var(--weight-sm);
+    width: 100%;
+    outline: none;
+    padding: var(--unit) var(--span-s);
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+  }
+
+  &__comment {
+    margin-top: calc(var(--span-xs) + 5px);
+    display: block;
+    font-family: inherit;
+    font-size: var(--size-m);
+    font-weight: var(--weight-sm);
+    width: 100%;
+    outline: none;
+    padding: var(--unit) var(--span-s);
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    resize: none;
+  }
+
+  &__button {
+    margin-top: var(--span-s);
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    font: normal normal 600 var(--size-m) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--white);
+    padding: var(--span-s) var(--span-m);
+    background: var(--blue);
+    cursor: pointer;
+  }
+}

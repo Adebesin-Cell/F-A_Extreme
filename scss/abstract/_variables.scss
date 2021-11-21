@@ -1,0 +1,38 @@
+:root {
+  --unit: 10px;
+  --Montserrat: "Montserrat", sans-serif;
+
+  --size-xs: 12px;
+  --size-s: 14px;
+  --size-m: 16px;
+  --size-l: 24px;
+  --size-xl: 32px;
+  --size-2xl: 48px;
+
+  --span-xs: var(--unit);
+  --span-s: calc(var(--unit) * 2);
+  --span-m: calc(var(--unit) * 3);
+  --span-l: calc(var(--unit) * 4);
+  --span-xl: calc(var(--unit) * 5);
+  --span-2xl: calc(var(--unit) * 6);
+
+  //font weights
+  --weight-xsm: 300;
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
+  --weight-xlg: 700;
+  --weight-xxlg: 800;
+  --weight-2xxlg: 900;
+
+  //colors
+
+  --white: #ffffff;
+  --yellow: #f7ca2c;
+  --light-blue: #34ddff;
+  --btn-blue: #34ddff;
+  --blue: #34ddff;
+  --text-grey-1: #707070;
+  --text-grey-2: #2b2b2b;
+  --text-grey-3: #cbcbcb;
+}

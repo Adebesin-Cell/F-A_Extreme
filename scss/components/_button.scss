@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+
+  &--buy {
+    padding: var(--unit) var(--span-m);
+    border-radius: 19px;
+    text-align: left;
+    font: normal normal medium var(--size-m) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--white);
+  }
+
+  &--blue {
+    background: var(--btn-blue);
+  }
+
+  &--white {
+    background: var(--white);
+  }
+
+  &--learn-more {
+    padding: var(--unit) var(--span-m);
+    text-align: left;
+    font: normal normal medium var(--size-m) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    margin-left: calc(var(--unit) + 5px);
+    border-radius: 19px;
+  }
+}

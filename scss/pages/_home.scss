@@ -1,0 +1,187 @@
+.section-intro {
+  padding-top: calc(2 * var(--span-xl));
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 28px;
+  }
+
+  &__sub-header {
+    margin-top: var(--span-m);
+    text-align: left;
+    font: normal normal 600 var(--size-m) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+  }
+
+  &__header {
+    margin-top: var(--span-xs);
+    text-align: left;
+    font: normal normal bold calc(var(--size-2xl) + 2px) / 61px
+      var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+  }
+
+  &__paragraph {
+    margin-top: var(--unit);
+    text-align: left;
+    font: normal normal normal var(--size-m) / 25px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+    padding-right: 30px;
+    width: 75%;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-top: var(--span-s);
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-blue);
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: calc(var(--unit) + 5px);
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--white);
+    }
+  }
+}
+
+.section-about {
+  padding-top: calc(2 * var(--span-xl) + var(--span-xl));
+}
+
+.about {
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__header {
+    margin-top: var(--span-xl);
+    text-align: center;
+    font: normal normal bold calc(var(--size-l) + 1px) / 30px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+    padding-bottom: var(--span-xl);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+  }
+
+  &__icon {
+    margin: 0 auto;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    svg {
+      fill: var(--blue);
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__sub-header {
+    text-align: center;
+    font: normal normal 600 var(--size-m) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--light-blue);
+    margin-top: var(--span-s);
+  }
+
+  &__paragraph {
+    text-align: center;
+    font: normal normal 600 var(--size-xs) / 20px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-2);
+    margin-top: var(--span-s);
+  }
+}
+
+.section-testimonial {
+  padding-top: calc(2 * var(--span-xl) + var(--span-xl));
+}
+
+.testimonial {
+  &__header {
+    text-align: center;
+    font: normal normal bold calc(var(--size-l) + 1px) / 30px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+  }
+
+  &__wrapper {
+    margin-top: var(--span-xl);
+  }
+
+  &__item {
+    padding: var(--span-m) var(--span-l);
+    box-shadow: 0px 2px 6px #00000017;
+    border-radius: 24px;
+    position: relative;
+  }
+
+  &__qoute {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    text-align: center;
+    font: normal normal normal calc(2 * var(--size-2xl) + var(--size-l) - 2px) /
+      147px Engravers MT;
+    letter-spacing: 0px;
+    color: var(--blue);
+  }
+
+  &__text {
+    margin-top: var(--span-l);
+    text-align: center;
+    font: normal normal 600 var(--size-xs) / 20px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-3);
+  }
+
+  &__name {
+    margin-top: var(--unit);
+    text-align: center;
+    font: normal normal 600 var(--size-s) / 18px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--blue);
+  }
+}
+
+.section-comment {
+  padding-top: calc(2 * var(--span-xl) + var(--span-xl));
+}
+
+.comment {
+  &__header {
+    text-align: center;
+    font: normal normal bold calc(var(--size-l) + 1px) / 30px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+  }
+}

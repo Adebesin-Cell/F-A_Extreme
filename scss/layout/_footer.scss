@@ -1,0 +1,53 @@
+.footer {
+  padding-top: calc(2 * var(--span-xl));
+  padding-bottom: var(--span-2xl);
+
+  &__header {
+    text-align: center;
+    font: normal normal bold calc(var(--size-l) + 1px) / 30px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    margin: var(--span-xl) auto;
+    padding: 0 var(--span-2xl);
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &__image {
+    margin: 0 auto;
+    display: block;
+    width: 72px;
+    height: 72px;
+  }
+
+  &__text {
+    display: block;
+    margin-top: calc(var(--span-s) + 5px);
+    text-align: center;
+    font: normal normal 600 calc(var(--size-m) - 1px) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+  }
+
+  &__paragraph {
+    text-align: center;
+    font: normal normal 600 calc(var(--size-m) - 1px) / 19px var(--Montserrat);
+    letter-spacing: 0px;
+    color: var(--text-grey-1);
+  }
+
+  &__contact {
+    text-decoration: none;
+    color: inherit;
+  }
+}
