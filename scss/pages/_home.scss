@@ -1,15 +1,32 @@
 .section-intro {
   padding-top: calc(2 * var(--span-xl));
+  @media only screen and (max-width: 768px) {
+    padding-top: var(--span-xl);
+  }
 }
 
 .intro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 60px;
+  @media only screen and (max-width: 1024px) {
+    grid-gap: 30px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__image {
     display: block;
     width: 100%;
     border-radius: 28px;
+
+    &-box {
+      @media only screen and (max-width: 768px) {
+        order: -1;
+      }
+    }
   }
 
   &__sub-header {
@@ -18,6 +35,9 @@
     font: normal normal 600 var(--size-m) / 19px var(--Montserrat);
     letter-spacing: 0px;
     color: var(--text-grey-1);
+    @media only screen and (max-width: 990px) {
+      margin-top: 0;
+    }
   }
 
   &__header {
@@ -27,6 +47,14 @@
       var(--Montserrat);
     letter-spacing: 0px;
     color: var(--text-grey-1);
+    @media only screen and (max-width: 1140px) {
+      font-size: calc(var(--size-xl) + 8px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xl) + 4px);
+      line-height: 44px;
+    }
   }
 
   &__paragraph {
@@ -37,6 +65,12 @@
     color: var(--text-grey-1);
     padding-right: 30px;
     width: 75%;
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 600px) {
+      padding-right: 0;
+    }
   }
 
   &__actions {
@@ -65,6 +99,12 @@
 
 .section-about {
   padding-top: calc(2 * var(--span-xl) + var(--span-xl));
+  @media only screen and (max-width: 768px) {
+    padding-top: calc(var(--span-2xl) + var(--span-m));
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: calc(var(--span-2xl));
+  }
 }
 
 .about {
@@ -86,6 +126,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
+    @media only screen and (max-width: 1024px) {
+      grid-gap: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__icon {
@@ -118,11 +164,22 @@
     letter-spacing: 0px;
     color: var(--text-grey-2);
     margin-top: var(--span-s);
+    @media only screen and (max-width: 768px) {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 400px;
+    }
   }
 }
 
 .section-testimonial {
   padding-top: calc(2 * var(--span-xl) + var(--span-xl));
+  @media only screen and (max-width: 768px) {
+    padding-top: calc(var(--span-2xl) + var(--span-m));
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: calc(var(--span-2xl));
+  }
 }
 
 .testimonial {
@@ -135,6 +192,14 @@
 
   &__wrapper {
     margin-top: var(--span-xl);
+
+    .owl-dots {
+      .owl-dot.active {
+        span {
+          background: var(--blue) !important;
+        }
+      }
+    }
   }
 
   &__item {
@@ -175,6 +240,12 @@
 
 .section-comment {
   padding-top: calc(2 * var(--span-xl) + var(--span-xl));
+  @media only screen and (max-width: 768px) {
+    padding-top: calc(var(--span-2xl) + var(--span-m));
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: calc(var(--span-2xl));
+  }
 }
 
 .comment {

@@ -5,6 +5,10 @@
     height: 37px;
     display: block;
     margin-right: var(--span-xs);
+    @media only screen and (max-width: 600px) {
+      width: 27px;
+      height: 27px;
+    }
 
     &-box {
       box-shadow: 0px 3px 6px #00000029;
@@ -27,6 +31,14 @@
       letter-spacing: 0px;
       color: var(--yellow);
       opacity: 1;
+      @media only screen and (max-width: 1024px) {
+        font-size: var(--size-m);
+        line-height: 24px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: var(--size-xs);
+        line-height: 14px;
+      }
     }
   }
 
