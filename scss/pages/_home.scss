@@ -55,6 +55,11 @@
       font-size: calc(var(--size-xl) + 4px);
       line-height: 44px;
     }
+
+    @media only screen and (max-width: 375px) {
+      font-size: calc(var(--size-xl));
+      line-height: 44px;
+    }
   }
 
   &__paragraph {

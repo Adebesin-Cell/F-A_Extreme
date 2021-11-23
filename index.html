@@ -15,6 +15,60 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="menu menu--hidden">
+      <div class="menu__container">
+        <div class="menu__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g>
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="header__logo-box logo">
+          <a href="#" class="header__logo-link">
+            <span class="header__logo">
+              <img
+                src="./assets/images/logo.jpeg"
+                alt="F&A EXTREME logo"
+                class="header__image"
+              />
+            </span>
+            <span class="header__logo-text"> F&A EXTREME </span>
+          </a>
+        </div>
+        <div class="menu__box">
+          <a href="#" class="btn btn--blue btn--buy" name="buy">Buy</a>
+        </div>
+      </div>
+      <div class="menu-navigation">
+        <ul class="menu-navigation__list">
+          <li class="menu-navigation__item">
+            <a href="#" class="menu-navigation__link" name="Home">Home</a>
+          </li>
+          <li class="menu-navigation__item">
+            <a href="#" class="menu-navigation__link" name="About Us"
+              >About Us</a
+            >
+          </li>
+          <li class="menu-navigation__item">
+            <a href="#" class="menu-navigation__link" name="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+          <li class="menu-navigation__item">
+            <a href="#" class="menu-navigation__link" name="Testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li class="menu-navigation__item">
+            <a href="#" class="menu-navigation__link" name="Comment">Comment</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <nav class="navigation">
@@ -32,15 +86,15 @@
           </div>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link" name="Home"> Home </a>
+              <a href="#intro" class="navigation__link" name="Home"> Home </a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link" name="About Us">
+              <a href="#about" class="navigation__link" name="About Us">
                 About Us
               </a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link" name="Contact Us">
+              <a href="#contact" class="navigation__link" name="Contact Us">
                 Contact Us
               </a>
             </li>
@@ -56,10 +110,18 @@
               <a href="#" class="btn btn--blue btn--buy" name="Buy">Buy</a>
             </div>
           </ul>
+          <div class="menu__bar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g>
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+              </g>
+            </svg>
+          </div>
         </nav>
       </div>
     </header>
-    <section class="section-intro">
+    <section class="section-intro" id="intro">
       <div class="container">
         <div class="intro">
           <div class="intro__content">
@@ -104,7 +166,7 @@
     <section class="section-about">
       <div class="container">
         <div class="about">
-          <div class="about__banner">
+          <div class="about__banner" id="about">
             <img
               src="./assets/images/about__banner.png"
               alt="about us"
@@ -270,7 +332,7 @@
     <footer class="footer">
       <div class="container">
         <h1 class="footer__header">REACH OUT TO US</h1>
-        <div class="footer__wrapper">
+        <div class="footer__wrapper" id="contact">
           <div class="footer__icon-box">
             <div class="footer__icon">
               <a href="#" target="_blank" class="footer__link">
@@ -318,6 +380,7 @@
     </footer>
     <script src="./assets/jquery.min.js"></script>
     <script src="./assets/owl.carousel.min.js"></script>
+    <script src="./Js/app.js"></script>
     <script>
       $(".owl-carousel").owlCarousel({
         loop: true,

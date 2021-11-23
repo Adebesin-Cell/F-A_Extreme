@@ -1,6 +1,7 @@
 .btn {
   display: inline-block;
   text-decoration: none;
+  border: 1px solid transparent;
 
   &--buy {
     padding: var(--unit) var(--span-m);
@@ -8,15 +9,29 @@
     text-align: left;
     font: normal normal medium var(--size-m) / 19px var(--Montserrat);
     letter-spacing: 0px;
-    color: var(--white);
   }
 
   &--blue {
     background: var(--btn-blue);
+    color: var(--white);
+    transition: all 0.3s;
+    &:hover {
+      background: var(--white);
+      border: 1px solid var(--blue);
+      color: var(--blue);
+    }
   }
 
   &--white {
     background: var(--white);
+    color: var(--blue);
+    transition: all 0.3s;
+
+    &:hover {
+      background: var(--blue);
+      border: 2px solid var(--blue);
+      color: var(--white);
+    }
   }
 
   &--learn-more {
@@ -24,7 +39,6 @@
     text-align: left;
     font: normal normal medium var(--size-m) / 19px var(--Montserrat);
     letter-spacing: 0px;
-    color: var(--blue);
     border: 2px solid var(--blue);
     margin-left: calc(var(--unit) + 5px);
     border-radius: 19px;
