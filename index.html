@@ -128,10 +128,14 @@
             <h3 class="intro__sub-header">TRUST ME</h3>
             <h1 class="intro__header">Your hair needs it</h1>
             <p class="intro__paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              beatae, praesentium magnam perferendis facere officiis
-              reprehenderit debitis tempore blanditiis ipsa? Ex quod excepturi
-              accusamus magni?
+              F & A Hair creamy is the key to retain moisture and prevent dry
+              hair that leads to breakeage. Enriched with Vitamin E for lustrous
+              hair Ingredient: jelly, parrafin, Oil, E-wax, Coconut Oil,Carrot
+              oil, Shea Butter, frequency, Sulphor, Vitamin E There is nothing
+              like new hair to make you feel positive and Beautiful. Lustering
+              hair is a key factor for good appearance. With F&A extreme hair
+              creamy, you’re gonna have deep nourishing and moisturizing effect
+              which helps your hair look stunning and healthy
             </p>
             <div class="intro__actions">
               <span class="intro__icon">
@@ -296,20 +300,32 @@
       <div class="container">
         <div class="comment">
           <h1 class="comment__header">LEAVE A REVIEW</h1>
-          <form action="#" class="form" method="post">
+          <form action="/signup" class="form" method="post">
             <div class="form__group">
               <label for="name" class="form__label">
                 <span class="text"> FULL NAME </span>
                 <span class="icon"> * </span>
               </label>
-              <input type="text" id="name" class="form__input" required />
+              <input
+                type="text"
+                id="name"
+                class="form__input"
+                name="fullName"
+                required
+              />
             </div>
             <div class="form__group">
               <label for="name" class="form__label">
                 <span class="text"> EMAIL ADDRESS </span>
                 <span class="icon"> * </span>
               </label>
-              <input type="email" id="email" class="form__input" required />
+              <input
+                type="email"
+                id="email"
+                class="form__input"
+                name="email"
+                required
+              />
             </div>
             <div class="form__group">
               <label for="comment" class="form__label">
@@ -322,6 +338,7 @@
                 id="comment"
                 cols="30"
                 rows="10"
+                required
               ></textarea>
             </div>
             <button class="form__button" type="submit">POST REVIEW</button>
@@ -335,7 +352,11 @@
         <div class="footer__wrapper" id="contact">
           <div class="footer__icon-box">
             <div class="footer__icon">
-              <a href="#" target="_blank" class="footer__link">
+              <a
+                href="https://www.instagram.com/p/CWlkzTgsFQZ/?utm_medium=share_sheet"
+                target="_blank"
+                class="footer__link"
+              >
                 <img
                   src="./assets/images/instagram.png"
                   alt="instagram"
@@ -347,7 +368,11 @@
           </div>
           <div class="footer__icon-box">
             <div class="footer__icon">
-              <a href="#" target="_blank" class="footer__link">
+              <a
+                href="https://mobile.facebook.com/fleshmoextremelimited/"
+                target="_blank"
+                class="footer__link"
+              >
                 <img
                   src="./assets/images/facebook.png"
                   alt="facebook"
@@ -371,7 +396,7 @@
           </div>
         </div>
         <p class="footer__paragraph">
-          <a href="tel:++234 801 2345 678" class="footer__contact"
+          <a href="tel:+234 801 2345 678" class="footer__contact"
             >+234 801 2345 678</a
           >
           <span> | Lagos, Nigeria</span>
@@ -380,7 +405,7 @@
     </footer>
     <script src="./assets/jquery.min.js"></script>
     <script src="./assets/owl.carousel.min.js"></script>
-    <script src="./Js/app.js"></script>
+    <script src="./Js/script.js"></script>
     <script>
       $(".owl-carousel").owlCarousel({
         loop: true,

@@ -21,6 +21,14 @@
     display: block;
     width: 100%;
     border-radius: 28px;
+    @media only screen and (max-width: 1200px) {
+      height: 100%;
+      object-fit: cover;
+    }
+    @media only screen and (max-width: 768px) {
+      height: initial;
+      object-fit: initial;
+    }
 
     &-box {
       @media only screen and (max-width: 768px) {
@@ -69,10 +77,7 @@
     letter-spacing: 0px;
     color: var(--text-grey-1);
     padding-right: 30px;
-    width: 75%;
-    @media only screen and (max-width: 1200px) {
-      width: 100%;
-    }
+    padding-right: var(--span-xs);
     @media only screen and (max-width: 600px) {
       padding-right: 0;
     }
