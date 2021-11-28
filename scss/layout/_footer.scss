@@ -1,6 +1,9 @@
 .footer {
   padding-top: calc(2 * var(--span-xl));
   padding-bottom: var(--span-2xl);
+  @media only screen and (max-width: 600px) {
+    padding-top: var(--span-xl);
+  }
 
   &__header {
     text-align: center;
