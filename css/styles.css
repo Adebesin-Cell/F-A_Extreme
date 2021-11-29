@@ -119,6 +119,18 @@ body {
   padding: var(--span-s) var(--span-xl);
   background: var(--btn-404);
   color: var(--white);
+  transition: all 0.3s;
+}
+
+.btn--error:hover {
+  background: var(--white);
+  border: 1px solid var(--btn-404);
+  color: var(--btn-404);
+}
+
+.btn--error:hover .icon svg path {
+  transition: all 0.3s;
+  fill: var(--btn-404);
 }
 
 .btn--error .icon {
@@ -136,6 +148,21 @@ body {
   font-style: normal;
   font-weight: var(--weight-md);
   line-height: 25px;
+  transition: all 0.3s;
+}
+
+.btn--success:hover {
+  background: unset;
+  border: 1px solid var(--white);
+}
+
+.btn--success:hover span {
+  color: var(--white);
+}
+
+.btn--success:hover .icon svg path {
+  transition: all 0.3s;
+  fill: var(--white);
 }
 
 @media only screen and (max-width: 600px) {
@@ -152,10 +179,12 @@ body {
 }
 
 .btn--success .icon svg path {
+  transition: all 0.3s;
   fill: var(--black);
 }
 
 .btn--success span {
+  transition: all 0.3s;
   color: var(--black);
 }
 
