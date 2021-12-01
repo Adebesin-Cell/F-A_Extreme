@@ -2,6 +2,8 @@ const openBtn = document.querySelector(".menu__bar");
 const closeBtn = document.querySelector(".menu__icon");
 const menu = document.querySelector(".menu");
 const body = document.querySelector("body");
+const musicAudio = document.querySelector(".intro__audio");
+const playBtn = document.querySelector(".intro__icon");
 
 const openMenu = function () {
   menu.classList.remove("menu--hidden");
@@ -15,3 +17,20 @@ const closeMenu = function () {
 
 openBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
+
+let songPlaying = false;
+console.log(musicAudio);
+
+const playSong = function () {
+  songPlaying = true;
+  musicAudio.play();
+};
+
+const pauseSong = function () {
+  songPlaying = false;
+  musicAudio.pause();
+};
+
+playBtn.addEventListener("click", () => {
+  songPlaying ? pauseSong() : playSong();
+});
