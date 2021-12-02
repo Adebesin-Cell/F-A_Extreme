@@ -19,7 +19,6 @@ openBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
 
 let songPlaying = false;
-console.log(musicAudio);
 
 const playSong = function () {
   songPlaying = true;
